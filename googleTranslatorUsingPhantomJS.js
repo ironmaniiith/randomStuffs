@@ -16,10 +16,9 @@ var text = "";
 
 for (var i = 3; i < system.args.length; i++) {
     text+=system.args[i];
-    text+=" ";
+    text+="%20"; //Space may also work
 };
 
-text = text.replace(/ /g, "%20");
 console.log(text);
 
 page.open('https://translate.google.com/#' + inputLanguage + '/' + outputLanguage + '/' + text, function (status) {
