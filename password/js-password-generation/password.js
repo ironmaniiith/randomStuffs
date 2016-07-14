@@ -5,7 +5,7 @@ var password = generator.generateMultiple(passwordLength, {
 	length: passwordLength,
 	numbers: true,
 	uppercase: true,
-	symbols: true,
+	// symbols: true,
 });
  
 for (var i = 0; i < passwordLength; i++) {
