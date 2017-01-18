@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code formatter and beautifier</title>
+<link rel="stylesheet" href="styles/atom-one-dark.css">
+</head>
+<body">
+<textarea placeholder="// Paste your code here" id="code-content" rows="20" cols="50">
+</textarea>
+<select id="code-language" name="cars">
+  <option value="hljs javascript">JavaScript</option>
+  <option value="hljs cpp">C-like</option>
+  <option value="hljs xml">HTML</option>
+  <option value="hljs css">CSS</option>
+</select>
+<button onclick="prettifyCode()">Prettify</button>
+<br>
+<br>
+<br>
+<pre style="margin: 0 auto; width: 80%"><code id="pretty-code" class="js hljs">
+  var a = 'Hello World!';
+  ;(function() {
+     console.log(a); 
+  });
+
+</code></pre>
+<script src="highlight.pack.js"></script>
+
+<script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+    function escapeHTMLCharacters(content) {
+        return content.replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+    }
+    function prettifyCode() {
+        var content = document.getElementById('code-content').value;
+        content = content.split('\n');
+        var code = [];
+        document.getElementById("code-content").value.split('\n').forEach(function(e){code.push('  ' + e);});
+        content = code.join('\n');
+        content = escapeHTMLCharacters(content);
+        var language = document.getElementById('code-language').value;
+        var pretty_code = document.getElementById('pretty-code');
+        pretty_code.innerHTML = '\n' + content + '\n\n';
+        pretty_code.className = language;
+        loadjscssfile("highlight.pack.js", "js") //dynamically load and add this .js file
+        setTimeout(function() {
+            hljs.initHighlighting();
+        }, 100);
+    }
+    function loadjscssfile(filename, filetype){
+        if (filetype=="js") { //if filename is a external JavaScript file
+            var fileref=document.createElement('script')
+            fileref.setAttribute("type","text/javascript")
+            fileref.setAttribute("src", filename)
+        }
+        else if (filetype=="css"){ //if filename is an external CSS file
+            var fileref=document.createElement("link")
+            fileref.setAttribute("rel", "stylesheet")
+            fileref.setAttribute("type", "text/css")
+            fileref.setAttribute("href", filename)
+        }
+        if (typeof fileref!="undefined")
+            document.getElementsByTagName("head")[0].appendChild(fileref)
+    }
+</script>
+</body>
+</html>
