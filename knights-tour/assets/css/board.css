@@ -1,0 +1,54 @@
+.square {
+    background: white; /* Default background is white */
+    float: left;
+    display:block;
+    overflow:hidden;
+    /*border: 1px solid #c8c8c8;*/
+    /* Default width as per 8x8 chess board */
+    /*width: 4.92em;*/
+    /*height: 4.92em;*/
+    /*line-height: 4.92em;*/
+}
+
+.square.white {
+    background: white;
+}
+
+.square.black {
+    background: #701300;
+}
+
+.knight {
+    background: url("../img/knight.svg") !important;
+}
+
+.text {
+    position: relative;
+}
+
+td {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    /*border-collapse: collapse;*/
+}
+
+td img {
+    max-width: 99%;
+    height: auto;
+}
+    
+table {
+    width: auto;
+    border: 2px solid black;
+}
+
+td[valign="top"] {
+    display: block;
+}
+
+td[valign="top"][style="width: 15%"] {
+    white-space: nowrap;
+    display: table-cell;
+}

@@ -1,0 +1,20 @@
+html,
+body {
+    margin: 0;
+    height:100%;
+    font-family: monospace;
+}
+
+html {
+    display:table;
+    width:100%;
+}
+
+body {
+    background: #000428;
+    background: -webkit-linear-gradient(to left, #000428 , #004e92);
+    background: linear-gradient(to left, #000428 , #004e92);
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+}
