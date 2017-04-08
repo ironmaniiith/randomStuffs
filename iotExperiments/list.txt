@@ -1,0 +1,19 @@
+Arduino Board (Uno is fine)
+USB Cable (Arduino to USB)
+BreadBoard
+Temperature Sensor
+Pressure Sensor
+Light Sensor
+Distance Sensor (Not that necessary but maybe required later)
+Push Buttons
+Battery
+LEDs
+IR LED
+7 Segment Display
+ESP8266 (Wifi module for arduino)
+Jumper Wires (Male to Male)
+Normal connecting wires
+Transistors
+Tranmsittor Receiver set
+Resistors
+PCB (For final circuit)

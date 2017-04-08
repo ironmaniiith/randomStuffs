@@ -1,0 +1,12 @@
+7 Segment Display    ----    Arduino
+
+a - Pin 6
+b - Pin 7
+c - Pin 8
+d - Pin 9
+e - Pin 10
+f - Pin 11
+g - Pin 12
+df - Pin 13
+
+Vcc --- Resistance (1k) --- Gnd (Corresponding to 5Volts)

@@ -1,0 +1,8 @@
+DHT11    ----    Arduino
+
+VCC    ----    3.3 V
+GND    ----    Gnd (Corresponding to 3.3 V)
+Dat    ----    Pin no 2
+
+
+Dat -- 10k -- VCC

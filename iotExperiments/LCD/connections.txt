@@ -1,0 +1,31 @@
+Led configuration to be used:
+
+LED Display	->	Arduino
+1	->	GND(Corresponding to 5V)
+2	->	5V
+3	->	Resistor (5k Ohm), Resistor -> Gnd
+4	->	12
+5	->	GND	
+6	->	11
+11	->	5
+12	->	4
+13	->	3
+14	->	2
+
+
+Push button configuration to be used:
+
+Gnd --- Resistor(1k) --- Push button pin 1
+5V	---	Push Button pin 2
+Push Button pin 1	---- Pin 8 of Arduino
+
+
+Instructions: 
+When the connection is established according to what is specified above and dumping the main.ino file into the Arduino, on pressing the push button we get the message on the LCD like
+Counter: 0
+Counter: 1
+Counter: 2
+...
+And so on
+
+With the delay of one second.

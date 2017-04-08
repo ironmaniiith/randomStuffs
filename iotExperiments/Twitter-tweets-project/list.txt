@@ -1,0 +1,12 @@
+Hardware requirements:
+Arduino board
+Breadboard
+3 5V dc relay
+4 bulbs - red, green
+Extension chord (for extending electrical supply)
+Arduino connecting wires (male female both required)
+Electrical wires (soft ones for bulb connection)
+
+Already have:
+Arduino board
+Breadboard

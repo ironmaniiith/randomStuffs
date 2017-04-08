@@ -1,0 +1,20 @@
+==============================================
+Non interrupt driven
+Push buttons have 2 pins (namely 'A' and 'B')
+A -> Pin 8 of arduino
+A -> Resistance (330 ohm) -> Gnd of arduino
+B -> VCC from adruino
+
+
+==============================================
+Interrupt driven (arduino code is in the file main.ino)
+Push buttons have 2 pins (namely 'A' and 'B')
+A -> Pin 2 of arduino
+A -> Resistance (330 ohm) -> Gnd of arduino
+B -> VCC from adruino
+
+==============================================
+
+
+
+Now when the button is pressed, it will automatically send the mail.

@@ -1,0 +1,6 @@
+UltraSonic    ----    Arduino
+
+Vcc           ----    5V
+Gnd           ----    GND
+Trig          ----    Pin 9
+Echo          ----    Pin 10

@@ -1,0 +1,6 @@
+RFID    ----    Arduino
+GND     ----    GND(Corresponding to 5V)
+TX      ----    Pin 10.
++5V     ----    5Volts of arduino
+
+The library used for RFID is SoftwareSerial.h
